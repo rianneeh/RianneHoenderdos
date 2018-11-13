@@ -1,0 +1,308 @@
+/* Algemeen*/
+
+@font-face {
+	font-family: "HKGrotesk-Bold";
+	src: url("../fonts/HKGrotesk-Bold.otf");
+}
+
+@font-face {
+	font-family: "HKGrotesk-Medium";
+	src: url("../fonts/HKGrotesk-Medium.otf");
+}
+
+@font-face {
+	font-family: "HKGrotesk-Regular";
+	src: url("../fonts/HKGrotesk-Regular.otf");
+}
+
+@font-face {
+	font-family: "HKGrotesk-Light";
+	src: url("../fonts/HKGrotesk-Light.otf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #333333;
+	background-color: #fafafa;
+}
+
+h1,
+h2 {
+	font-family: "HKGrotesk-Bold", Arial, sans-serif;
+}
+
+h3 {
+	font-family: "HKGrotesk-Medium", Arial, sans-serif;
+	;
+	font-size: 1.7em;
+	margin-top: 1em;
+	padding 2em 0;
+}
+
+h4 {
+	font-family: "HKGrotesk-Regular", Arial, sans-serif;
+	font-size: 1.2em;
+	margin: 2em 0;
+}
+
+li {
+	font-family: "HKGrotesk-Regular", Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 2em;
+	color: dimgrey;
+}
+
+p {
+	font-family: "HKGrotesk-Regular", Arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 2em;
+	color: dimgrey;
+}
+
+p strong {
+	font-family: "HKGrotesk-Bold", Arial, san-serif;
+	font-weight: 600;
+}
+
+a {
+	color: #b3b3b3;
+	font-family: "HKGrotesk-Medium", sans-serif;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+}
+
+nav h1 {
+	display: block;
+	margin: 1.4em auto 1em;
+	color: black;
+	width: 14em;
+	text-align: center;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+nav ul {
+	padding: 3.5em 0 1em;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	margin: 20px;
+}
+
+a:hover {
+	color: black;
+}
+
+footer {
+	width: 18em;
+	margin: 0 auto;
+	display: block;
+}
+
+footer p {
+	font-size: 1em;
+}
+
+/*home*/
+
+#index h2 {
+	font-size: 2.5em;
+	width: 70%;
+	margin: 2em auto;
+	line-height: 1.5em;
+}
+
+#index h3 {
+	margin: 4em 1.2em 1em;
+	text-align: center;
+}
+
+/*portfolio*/
+
+a > img {
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	position: relative;
+	width: 90%;
+	transition: all 0.5s;
+	margin: 2em auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgb(255, 255, 255, 0.5);
+}
+
+.text {
+	color: black;
+	font-size: 2em;
+	font-family: "HKGrotesk-Bold", Arial, sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.container:hover {
+	width: 92%;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+/*cv*/
+
+img#cv {
+	width: 80%;
+	display: block;
+	margin: 2em auto;
+}
+
+/*about*/
+
+nav + h2 {
+	font-size: 3em;
+	text-align: center;
+	padding: 0.2em 0 0.2em;
+	color: black;
+}
+
+.about p {
+	padding-right: 15%;
+	font-size: 1em;
+}
+
+.about h3 {
+	margin-top: 4em;
+}
+
+@media(min-width: 70em) {
+	img#about-img {
+		width: 43%;
+		margin: 3em;
+		margin-left: 4.5em;
+		float: left;
+	}
+}
+
+.fotocollage {
+	margin: 12% 12%;
+
+}
+
+.collage {
+	width: 220px;
+	margin: 10px;
+}
+
+@media(min-width: 70em) {
+	nav ul {
+		margin: -7.8em 3em 0 3em;
+		text-align: left;
+		display: flex;
+	}
+
+	nav ul li#split {
+		margin-right: auto;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+}
+
+/* contact */
+
+div#contact {
+	margin: 5em 30%;
+
+}
+
+.img-wide {
+	width: 85%;
+	display: block;
+	margin: 2em auto;
+	transition: all ease 1s;
+}
+
+.img-wide:hover {
+	width: 89%;
+}
+
+/*specifieke portfolio pagina*/
+
+.werkinfo {
+	display: block;
+	margin: 1em auto;
+	text-align: center;
+}
+
+.werkinfo button {
+	background-color: rgb(179, 179, 179, 0.2);
+	margin: 0 1em;
+	padding: 0.5em 1em;
+	font-family: "HKGrotesk-Medium", sans-serif;
+	font-size: 0.8em;
+	border-radius: .8em;
+	border: none;
+}
+
+.centered {
+	width: 85%;
+	margin: 3em auto;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.twocolumns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5%;
+	padding: 2em 18%;
+	margin: 3em 0;
+	background-color: rgb(179, 179, 179, 0.2);
+}
+
+.showpdf {
+	background-color: rgb(179, 179, 179, 0.2);
+	padding: 2em 0;
+	margin: 3em 0;
+	text-align: center;
+
+}
+
+.twocolumns ul {
+	list-style-type: circle;
+}
+
+embed {
+	width: 85%;
+	height: 50em;
+	margin: 0 auto;
+	display: block;
+}
