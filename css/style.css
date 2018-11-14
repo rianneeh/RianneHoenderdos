@@ -320,6 +320,14 @@ img + h4 {
 	text-align: center;
 }
 
+.grey ul {
+	text-align: left;
+	width: 72%;
+	margin: 0 auto 2em;
+	font-size: 1.2em;
+	list-style-type: circle;
+}
+
 .white {
 	text-align: center;
 	padding: 2em 0;
@@ -335,6 +343,12 @@ img + h4 {
 
 #transavia div > h4 {
 	color: #00d66c;
+	margin-top: 3em;
+	margin-bottom: 0;
+}
+
+#ns div > h4 {
+	color: #fcd26a;
 	margin-top: 3em;
 	margin-bottom: 0;
 }
