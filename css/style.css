@@ -261,6 +261,13 @@ div#contact {
 	width: 89%;
 }
 
+.img-small {
+	width: 30%;
+	display: block;
+	margin: 2em auto;
+	transition: all ease 1s;
+}
+
 /*specifieke portfolio pagina*/
 
 p a {
