@@ -110,7 +110,7 @@ a:hover {
 
 footer {
 	width: 18em;
-	margin: 0 auto;
+	margin: 1em auto 0;
 	display: block;
 }
 
@@ -270,14 +270,15 @@ div#contact {
 
 /* driekoloms grid*/
 
-#driekolom {
+.driekolom {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 4%;
 	margin: 3%;
+	min-height: 100px;
 }
 
-#driekolom img:hover {
+.driekolom img:hover {
 	width: 105%;
 	transition: all 1s;
 }
